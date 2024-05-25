@@ -1,8 +1,8 @@
 import { resolve } from 'node:path';
+import FastifyVite from '@fastify/vite';
 import Fastify from 'fastify';
-import FastifyVite from '@fastify/vite'
 
-const server = Fastify({ logger: true })
+const server = Fastify({ logger: true });
 
 await server.register(FastifyVite, {
 	root: resolve(import.meta.dirname, '../'),
@@ -10,11 +10,11 @@ await server.register(FastifyVite, {
 	spa: true,
 });
 
-server.get('/your-base/', (req, reply) => {
-	return reply.html()
+server.get('/', (req, reply) => {
+	return reply.html();
 });
 
-await server.vite.ready()
+await server.vite.ready();
 
 try {
 	await server.listen({ host: 'localhost', port: 3000 });

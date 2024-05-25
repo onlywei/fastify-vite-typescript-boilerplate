@@ -6,9 +6,10 @@
   "type": "module",
   "scripts": {
     "build": "npm run build:server && vite build",
-		"build:server": "tsc --project tsconfig.server.json",
-		"start": "npm run build:server && node dist/server.js --dev",
-		"start:prod": "node dist/server.js"
+    "build:server": "tsc --project tsconfig.server.json",
+    "lint": "biome lint --apply .",
+    "start": "npm run build:server && node dist/server.js --dev",
+    "start:prod": "node dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,7 @@
     "fastify": "^4.27.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.7.3",
     "@types/node": "^20.12.12",
     "@vitejs/plugin-react": "^4.3.0",
     "typescript": "^5.4.5",

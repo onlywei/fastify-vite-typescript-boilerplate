@@ -1,3 +1,4 @@
-const rootElement = document.getElementById('root') || document.createElement('div');
+const rootElement =
+	document.getElementById('root') || document.createElement('div');
 
-rootElement.innerHTML = 'Hello World'
+rootElement.innerHTML = 'Hello World';

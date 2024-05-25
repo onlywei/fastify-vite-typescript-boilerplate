@@ -10,7 +10,7 @@ await server.register(FastifyVite, {
 	spa: true,
 })
 
-server.get('*', (req, reply) => {
+server.get('/some/where/', (req, reply) => {
 	return reply.html()
 });
 

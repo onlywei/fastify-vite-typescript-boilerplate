@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "description": "Boilerplate for setting up @fastify/vite with Typescript",
   "main": "dist/server.js",
+  "type": "module",
   "scripts": {
-    "test": "exit 0;"
+    "build": "npm run build:server && vite build",
+		"build:server": "tsc --project tsconfig.server.json",
+		"start": "npm run build:server && node dist/server.js --dev",
+		"start:prod": "node dist/server.js"
   },
   "repository": {
     "type": "git",

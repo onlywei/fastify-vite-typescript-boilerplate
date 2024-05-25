@@ -8,9 +8,9 @@ await server.register(FastifyVite, {
 	root: resolve(import.meta.dirname, '../'),
 	dev: process.argv.includes('--dev'),
 	spa: true,
-})
+});
 
-server.get('/some/where/', (req, reply) => {
+server.get('/your-base/', (req, reply) => {
 	return reply.html()
 });
 

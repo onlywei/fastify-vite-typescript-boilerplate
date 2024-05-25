@@ -1,0 +1,24 @@
+{
+  "name": "fastify-vite-typescript-boilerplate",
+  "version": "0.1.0",
+  "description": "Boilerplate for setting up @fastify/vite with Typescript",
+  "main": "dist/server.js",
+  "scripts": {
+    "test": "exit 0;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/onlywei/fastify-vite-typescript-boilerplate.git"
+  },
+  "keywords": [
+    "fastify",
+    "vite",
+    "typescript"
+  ],
+  "author": "Wei Wang <wei@fastmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/onlywei/fastify-vite-typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/onlywei/fastify-vite-typescript-boilerplate#readme"
+}

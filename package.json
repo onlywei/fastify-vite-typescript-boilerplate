@@ -28,13 +28,13 @@
   "homepage": "https://github.com/onlywei/fastify-vite-typescript-boilerplate#readme",
   "dependencies": {
     "@fastify/vite": "^6.0.7",
-    "fastify": "^4.27.0"
+    "fastify": "^4.28.1"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.7.3",
-    "@types/node": "^20.12.12",
-    "@vitejs/plugin-react": "^4.3.0",
+    "@biomejs/biome": "^1.8.3",
+    "@types/node": "^20.14.10",
+    "@vitejs/plugin-react": "^4.3.1",
     "typescript": "^5.5.3",
-    "vite": "^5.2.11"
+    "vite": "^5.3.3"
   }
 }

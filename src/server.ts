@@ -10,6 +10,7 @@ await server.register(FastifyVite, {
 	spa: true,
 });
 
+// Route must match vite "base": https://vitejs.dev/config/shared-options.html#base
 server.get('/app/', (req, reply) => {
 	return reply.html();
 });

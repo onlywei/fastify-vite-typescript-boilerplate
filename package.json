@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/onlywei/fastify-vite-typescript-boilerplate#readme",
   "dependencies": {
-    "@fastify/vite": "^6.0.6",
+    "@fastify/vite": "^6.0.7",
     "fastify": "^4.27.0"
   },
   "devDependencies": {

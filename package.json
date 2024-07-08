@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "npm run build:server && vite build",
-    "build:server": "tsc --project tsconfig.server.json",
+    "build:server": "tsc",
     "lint": "biome lint --apply .",
     "start": "npm run build:server && node dist/server.js --dev",
     "start:prod": "node dist/server.js"
